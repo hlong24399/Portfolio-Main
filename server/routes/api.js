@@ -24,8 +24,8 @@ router.post('/contact', (req, res) => {
   const mailOpts = {
     from: 'Your sender info here', // This is ignored by Gmail
     to: process.env.GMAIL_USER,
-    subject: 'New message from contact form at tylerkrys.ca',
-    text: `${req.body.user_name} (${req.body.your_email}) says: ${req.body.user_message}`
+    subject: `New message from ${req.body.your_email}`,
+    text: `${req.body.user_name} says: \n ${req.body.user_message}`
   }
 
   // Attempt to send the email
