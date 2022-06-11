@@ -89,13 +89,14 @@ a:hover,a:active,a:focus{
     margin-right: -42%;
 }
 
-
 /* ///////////////////////////////////////////////////////////////////// 
 //  02 - Header 
 /////////////////////////////////////////////////////////////////////*/
 
 header {
-	background: url(../images/bg-small.jpg) no-repeat;
+	/* background: url(../images/bg-small.jpg) no-repeat; */
+	background: rgb(0,0,0);
+	background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,244,216,1) 100%);
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: 50% -50px;
@@ -105,11 +106,17 @@ header {
     color: #fff;
 }
 .bigheadline {
-	font-family: 'Raleway', sans-serif;
+	background-image: url(https://media3.giphy.com/media/5n5KC6SD5KA9bWx99W/giphy.gif?cid=ecf05e4779yxb3w71od57r5iwbs6211kqafmy5efhyj90a45&rid=giphy.gif&ct=g);
+	-webkit-background-clip: text;
+	background-size: cover;
+	color: transparent;
+	text-transform: uppercase;
+	margin: 10px 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	font-weight: 100;
-	font-size: 10em;
+	font-size: 11em;
 	margin: 0;
-	color: #71a1f8;
+	/* color: #71a1f8; */
 	font-weight: 600;
 }
 .subheadline {
@@ -156,8 +163,8 @@ header {
 .logo-text {
     font-size: 3em;
     padding: 0.2em 0;
-    color: #fff;
-    font-family: 'Raleway', sans-serif;
+    color: #e1e1e1;
+    font-family: 'Cabin', sans-serif;
     font-weight: 100;
     display: table-cell;
 	vertical-align: middle;
@@ -212,8 +219,6 @@ header {
 //  04 - Services
 /////////////////////////////////////////////////////////////////////*/
 
-
-
 .services {
 	max-width: 293px;
 	height: 263px;
@@ -235,7 +240,7 @@ header {
     border-radius: 50%;
 }
 .service-wrap i {
-    margin-top: 40px;
+    margin-top: 30px;
     transition: all 0.3s ease;
 }
 .service-wrap:hover i {
@@ -395,7 +400,7 @@ header {
 #testimonial {
     background: url(../images/parallax.jpg);
     padding: 80px 0px 80px 0px;
-    color: #fff;
+    color: #e1e1e1;
     background-attachment: fixed;
     background-size: cover;
 }
@@ -573,21 +578,6 @@ footer {
     color: #e66f69;
 }
 
-/*Custom code */
-#about-me .row {
-	/* background: url("/wwwroot/assets/images/bg-image-premium.svg");
-	background-size: cover;
-		background-attachment: fixed;
-		background-position: 50% -50px; */
-}
-
-#about-me {
-	/* background: url("/wwwroot/assets/images/bg-image-premium.svg");
-	background-size: cover;
-		background-attachment: fixed;
-		background-position: 50% -50px; */
-}
-
 /* ///////////////////////////////////////////////////////////////////// 
 //  09 - Responsive Fixes
 /////////////////////////////////////////////////////////////////////*/
@@ -724,4 +714,24 @@ footer {
 	    top: 70%;
 	    left: 44%;
 	}
+}
+
+
+
+/* ///////////////////////////////////////////////////////////////////// 
+// 10. Custom Code
+/////////////////////////////////////////////////////////////////////*/
+
+p, ul, li{
+	font-size: 17px;
+}
+
+#about-image {
+	max-width: -webkit-fill-available;
+    vertical-align: middle;
+}
+
+#clock {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	color: #e1e1e1;
 }

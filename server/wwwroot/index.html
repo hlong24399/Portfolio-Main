@@ -8,7 +8,7 @@
 <!--<![endif]-->
 
 <head>
-    <title>Bryan - GetInspired</title>
+    <title>Bryan Tutoring Service</title>
 
     <!-- meta -->
     <meta charset="utf-8">
@@ -63,11 +63,11 @@
                         <div class="dropdown-menu">
                             <div class="arrow-up"></div>
                             <ul>
-                                <li><a data-scroll href="#body">My Home<i class="pe-7s-home"></i></a><span
+                                <li><a data-scroll href="#about-me">About me<i class="pe-7s-home"></i></a><span
                                         class="menu-effect"></span></li>
-                                <li><a data-scroll href="#services">I Can Help With<i class="pe-7s-config"></i></a><span
+                                <li><a data-scroll href="#services">Lesson Topics<i class="pe-7s-config"></i></a><span
                                         class="menu-effect"></span></li>
-                                <li><a data-scroll href="#portfolio">Feedbacks<i class="pe-7s-glasses"></i></a><span
+                                <li><a data-scroll href="#portfolio">Feedback<i class="pe-7s-glasses"></i></a><span
                                         class="menu-effect"></span></li>
                                 <li><a data-scroll href="#testimonial">Contact Me <i class="pe-7s-comment"></i><span
                                             class="menu-effect"></span></a></li>
@@ -83,38 +83,44 @@
     <!-- About Me -->
     <section id="about-me" class="service-area">
         <div class="container">
-            <h2 class="block_title">&#128100; About Me &#128100;</h2>
+            <h2 class="block_title">About Me</h2>
             <div class="row">
-                <div class="col-md-9">
-                    <h3 class="about-me-h3"> Hi, I am Bryan Nguyen, welcome to my personal tutoring space. </h3>
-
+                <div class="col-md-6">
+                    <h2 class="about-me-h3"> Hi, I am Bryan, welcome to my personal tutoring space. </h2>
                     <p class="about-me-p">
                         With more than 3 years of experience in tutoring, I have learned many methods to effectively
-                        communicate and walk my students over problems and topics. I have performed tutoring for both
-                        in-person and virtual setup, where I use Zoom Meeting for virtual meetings. Specifically, I
-                        conduct lectures using whiteboards, remote controls, screen sharing, and other features, to
-                        enhance the live interaction during lectures and keep our lesson interesting!
-
-                        I am fluent when writing codes in Python, JavaScript, C/C++/C#, SQL, Bash, CSS, HTML.
-                        </ul>
+                        communicate and walk my students over problems and topics.
                     </p>
+                    <p>I have performed tutoring for both
+                    in-person and virtual setup, where I use Zoom Meeting for virtual meetings. Specifically, I
+                    conduct lectures using whiteboards, remote controls, screen sharing, and other features, to
+                    enhance the live interaction during lectures and keep our lesson interesting!</p>
+                    <h3 class=""> My Technology Stack </h3>
+            
                     <ul>
-                        <li>C++ (Object-oriented Programming and Competitive Problems)</li>
-                        <li>SQL, MySQL, MSSQL, </li>
-                        <li>JavaScript, CSS, HTML, Boostrap 4/5, jQuery.</li>
+                        <li>C/C#/C++ (Object-oriented Programming and Competitive Problems)</li>
+                        <li>SQL, MySQL, MSSQL, MongoDB</li>
+                        <li>JavaScript, Node.js, Express, CSS, HTML, Boostrap 4/5, jQuery.</li>
                         <li>Python3 (Matplotlib, Pandas, Kaggle API, Machine Learning)</li>
                         <li>Other bachelorerate-level subjects.</li>
                     </ul>
                 </div>
-                <div class="col-md-3 text-center hidden-xs hidden-sm">
-                    <img src="/wwwroot/assets/images/tutor-on-stage.png">
+                <div class="col-md-6 text-center hidden-xs hidden-sm">
+                    <img id="about-image" src="assets/images/intro-image-premium.jpg">
                 </div>
             </div>
         </div>
     </section>
+
     <section id="services" class="service-area">
+        <div style='
+        background: url("assets/images/bg-small.jpg"); 
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: 50% -50px;
+        color: #e1e1e1'>
         <div class="container">
-            <h2 class="block_title">&#127776; I Can Help With &#127776;</h2>
+            <h2 class="block_title">Lesson Topics</h2>
             <div class="row">
                 <div class="col-md-4 col-sm-4">
                     <div class="services">
@@ -178,21 +184,22 @@
                         <div class="service-wrap">
                             <i class="pe-7s-config pe-dj pe-va"></i>
                             <h3>Mathematics</h3>
-                            <p>I have spent times understanding the core concepts of math so that I can answer your
-                                questions in the most
-                                constructive ways. </p>
+                            <p>I would love to hear what problems you are struggling, then I explain the problems,
+                                and get along with your learning journey.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </section>
 
 
-   
+
     <section id="testimonial" class="testimonial-area">
         <div class="container">
-            <h2 class="block_title">&#10024; Awesome Feedbacks &#10024;</h2>
+            <h2 class="block_title">Awesome Feedbacks</h2>
             <div class="row">
                 <div class="col-xs-12">
                 </div>
@@ -245,16 +252,16 @@
         <div id="googleMap" style="width:100%;"></div>
         <div id="contact-area">
             <div class="container">
-                <h2 class="block_title">&#9997; Write Me &#9997;</h2>
+                <h2 class="block_title">Write Me</h2>
                 <div class="row">
                     <div class="col-xs-12">
                     </div>
                     <div class="col-sm-6">
                         <div class="moreDetails">
                             <h2 class="con-title"></h2>
-                            <p> I am currently located in Santa Ana, CA. I can provide tutors for an individual, a
-                                group, or an entire class room. Feel free to send me an inquiry, let's see if we can
-                                shake hand on this! </p>
+                            <p> I am currently located in Santa Ana, CA. Any questions can be delivered to me using this form,
+                                and I would be more than happy to answer your inquiry! </p>
+
                             <ul class="address">
                                 <li><i class="pe-7s-map-marker"></i><span>Santa Ana, CA, 92703, United States</span>
                                 </li>
@@ -265,17 +272,17 @@
                     </div>
                     <div class="col-sm-6">
                         <h2 class="con-title">Your message here </h2>
-                        <form role="form">
+                        <form action="/api/contact" method="post" id="contact-form" role="form">
                             <div class="form-group">
-                                <input type="text" class="form-control" id="user_name"
+                                <input type="text" class="form-control" id="user_name" name="user_name"
                                     placeholder="I can call you by ... ">
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control" id="your_email"
+                                <input type="email" class="form-control" id="your_email" name="your_email"
                                     placeholder="I can email you at ... ">
                             </div>
                             <div class="form-group">
-                                <textarea name="InputMessage" id="user_message" class="form-control" rows="5"
+                                <textarea id="user_message" name="user_message" class="form-control" rows="5"
                                     placeholder="You want to say that ... " required></textarea>
                             </div>
 
