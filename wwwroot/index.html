@@ -41,7 +41,8 @@
     <header id="header">
         <div class="center text-center">
             <h1 class="bigheadline">Get Inspired</h1>
-            <h4 class="subheadline">&#128262; <span id="clock"></span> &#128262; </h4>
+            <!-- <hr style="width: 50%; "> -->
+            <h4 class="subheadline"> <span id="clock"></span> </h4>
         </div>
         <div class="bottom">
             <a data-scroll href="#navigation" class="scrollDown animated pulse" id="scrollToContent"><i
@@ -113,12 +114,6 @@
     </section>
 
     <section id="services" class="service-area">
-        <div style='
-        background: url("assets/images/bg-small.jpg"); 
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: 50% -50px;
-        color: #e1e1e1'>
         <div class="container">
             <h2 class="block_title">Lesson Topics</h2>
             <div class="row">
@@ -275,15 +270,15 @@
                         <form action="/api/contact" method="post" id="contact-form" role="form">
                             <div class="form-group">
                                 <input type="text" class="form-control" id="user_name" name="user_name"
-                                    placeholder="I can call you by ... ">
+                                    placeholder="Your Name ">
                             </div>
                             <div class="form-group">
                                 <input type="email" class="form-control" id="your_email" name="your_email"
-                                    placeholder="I can email you at ... ">
+                                    placeholder="You Email ">
                             </div>
                             <div class="form-group">
                                 <textarea id="user_message" name="user_message" class="form-control" rows="5"
-                                    placeholder="You want to say that ... " required></textarea>
+                                    placeholder="Your Message " required></textarea>
                             </div>
 
                             <button type="submit" class="btn medium"> Send </button>

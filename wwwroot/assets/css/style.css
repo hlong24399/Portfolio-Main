@@ -36,7 +36,12 @@ html, body {
 }
 
 body {
-	font-family: 'Lato', sans-serif;
+	background: url(../images/yellow-abstract-premium.jpg);
+    padding: 0px 0px 80px 0px;
+    color: #000000;
+    background-attachment: fixed;
+    background-size: cover;
+	/* font-family: 'Lato', sans-serif; */
 }
 h1,h2,h3,h4,h5,h6 {
 	font-family: 'Dosis', sans-serif;
@@ -73,9 +78,9 @@ a:hover,a:active,a:focus{
 }
 .block_title:before,.block_title:after {
     content: "";
-    background: #ccc;
+    background: #cfbe08;
     display: inline-block;
-    height: 1px;
+    height: 6px;
     position: relative;
     width: 42%;
     vertical-align: middle;
@@ -94,12 +99,10 @@ a:hover,a:active,a:focus{
 /////////////////////////////////////////////////////////////////////*/
 
 header {
-	/* background: url(../images/bg-small.jpg) no-repeat; */
-	background: rgb(0,0,0);
-	background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,244,216,1) 100%);
+	background: url(../images/yellow-banner.jpg) no-repeat;
 	background-size: cover;
-	background-attachment: fixed;
-	background-position: 50% -50px;
+	background-attachment: scroll;
+	background-position: 50% 0px;
 }
 .center {
     text-align: center;
@@ -112,12 +115,11 @@ header {
 	color: transparent;
 	text-transform: uppercase;
 	margin: 10px 0;
+	padding-bottom: 20%;
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	font-weight: 100;
-	font-size: 11em;
-	margin: 0;
-	/* color: #71a1f8; */
-	font-weight: 600;
+	font-size: 13em;
+	margin: 0px;
+	font-weight: 800;
 }
 .subheadline {
 	font-family: 'Titillium Web', sans-serif;
@@ -129,7 +131,7 @@ header {
 
 .scrollDown {
     font-size: 4em;
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.85);
     position: absolute;
     bottom: 10%;
     left: 49%;
@@ -145,7 +147,10 @@ header {
 /////////////////////////////////////////////////////////////////////*/
 
 #navigation{
-	background: #111;
+	background: url(../images/nav-bg-low-opacity.png) no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: 50% -50px;
 }
 .nav-wrap {
 	position: fixed;
@@ -228,7 +233,7 @@ header {
 	padding-top: 40px;
 }
 .service-area {
-    margin: 80px 0px 40px 0px;
+    margin: 120px 0px 40px 0px;
 }
 
 .service-wrap {
@@ -397,12 +402,13 @@ header {
 //  06 - Testimonial 
 /////////////////////////////////////////////////////////////////////*/
 
-#testimonial {
-    background: url(../images/parallax.jpg);
-    padding: 80px 0px 80px 0px;
-    color: #e1e1e1;
+#testimonial {	
+
+    /* background: url(../images/yellow-abstract-premium.jpg);
+    color: #000000;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: cover; */
+    padding: 00px 0px 80px 0px;
 }
 
 .testimonila-block {
@@ -613,6 +619,9 @@ footer {
 	    font-size: 11px;
 	    padding: 0px 35px;
 	}
+	.bigheadline {
+		padding-bottom: 10%;
+	}
 }
 
 @media all and (max-width: 991px) and (min-width: 768px) {
@@ -630,18 +639,17 @@ footer {
 	.pe-dj {
 		font-size: 6em;
 	}
+	.bigheadline {
+		padding-bottom: 20%;
+	}
 
 }
 
-@media all and (max-width: 991px) {
+/* @media all and (max-width: 991px) {
 
 	header{
-		background: url(../images/bg-small.jpg) no-repeat;
-		background-size: cover;
-		background-attachment: fixed;
-		background-position: 50% -50px;
 	}
-}
+} */
 
 @media all and (max-width: 768px) {
 	.services {
@@ -733,5 +741,9 @@ p, ul, li{
 
 #clock {
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	color: #e1e1e1;
+	color: #00000054;
+	font-weight: 100;
+}
+
+section.service-area {
 }
