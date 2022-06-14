@@ -652,6 +652,11 @@ footer {
 } */
 
 @media all and (max-width: 768px) {
+	#navigation {
+		background: none;
+		background-color: #837755;
+	}
+
 	.services {
 		max-width: 293px;
 		height: 293px;
@@ -689,7 +694,10 @@ footer {
 	}
 }
 @media all and (max-width: 380px) {
-
+	#navigation {
+		background: none;
+		background-color: #837755;
+	}
 
 	.logo-text {
 	    font-size: 2em;
