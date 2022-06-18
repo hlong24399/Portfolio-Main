@@ -129,11 +129,16 @@ function scroll() {
    if ($(window).scrollTop() >= origOffsetY) {
        $('#navigation').addClass('nav-wrap');
        $('#services').addClass('exp');
-       //$('.content').addClass('menu-padding');
-   } else {
-       $('#navigation').removeClass('nav-wrap');
-       $('#services').removeClass('exp');
-       //$('.content').removeClass('menu-padding');
+      //  $('#navigation').css("margin-bottom")
+      //  Custom code
+       // $('#about-me').hide();
+       $('#about-me').css('margin-top', '196.9px');
+      } else {
+        $('#navigation').removeClass('nav-wrap');
+        $('#services').removeClass('exp');
+       $('#about-me').css('margin-top', '120px');
+
+      // $('#about-me').show();
    }
 
 

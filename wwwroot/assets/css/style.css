@@ -578,7 +578,6 @@ footer {
 .designed {
     margin: 0;
     padding: 20px 0px;
-    text-align: right;
 }
 .designed a:hover {
     color: #e66f69;
@@ -752,6 +751,7 @@ p, ul, li{
 	color: #00000054;
 	font-weight: 100;
 }
-
-section.service-area {
-}
+/* 
+#about-me {
+	margin-top: 0px;
+} */
