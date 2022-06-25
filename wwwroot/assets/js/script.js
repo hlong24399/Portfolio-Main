@@ -237,8 +237,53 @@ function clock() {
 }
 setInterval('clock()', 1000);
 
+// Captitalize first letter
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+// 
+function updatePosition(position)
+{
+  
+  // $("weather-info").text(position);
+  var lat = position["coords"]["latitude"];
+  var lon = position["coords"]["longitude"]
+  var apikey = 'b2e24dab707e582bdf1f20a5720ab74e'
+
+  const weather_url = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=hourly,minutely,daily,alerts&appid=${apikey}`
+  fetch(weather_url)
+    .then(response => response.json())
+    .then(data => {
+        F = Math.floor(1.8 * ((data.current.temp) - 273) + 32)
+        C = Math.floor((F-32)*5/9)
+        console.log(data);
+        tempInfo = `${F}°F | ${C}°C - ${capitalizeFirstLetter(data.current.weather[0].description)} `
+        $("#weather-info").prepend(tempInfo);
+        icon_id = data.current.weather[0].icon;
+        $("#weather-icon").attr("src", `https://openweathermap.org/img/wn/${icon_id}@4x.png`)
+        
+        // Hide margin when window is smaller than 400.
+        if ($(window).width() < 400)
+        {
+          $("#weather-icon").css('margin', "-20px");
+        }
+    })
+  
+  // console.log(position["coords"]["latitude"]);
+  console.log(position);
+}
+
+// Retrieve User Location
+function getLocation() {
+  if (navigator.geolocation)
+    {
+      navigator.geolocation.getCurrentPosition(updatePosition);
+    } 
+}
+
 $(document).ready(function () {
     clock();
     const date = new Date();
+    getLocation(); 
 });
-

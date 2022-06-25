@@ -147,7 +147,8 @@ header {
 /////////////////////////////////////////////////////////////////////*/
 
 #navigation{
-	background: url(../images/nav-bg-low-opacity.png) no-repeat;
+	/* background: url(../images/nav-bg-low-opacity.png) no-repeat; */
+	background: #000000;
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: 50% -50px;
@@ -179,7 +180,7 @@ header {
     float: right;
     font-size: 3em;
     color: #fff;
-    padding-top: 10px;
+    padding-top: 13px;
 }
 .dropdown-menu {
     min-width: 240px;
@@ -188,7 +189,7 @@ header {
     border: 1px solid #000;
     box-shadow: none;
     border-radius: 0px;
-    margin-top: 5px;
+    margin-top: 7px;
 }
 .dropdown-menu ul {
     list-style: none;
@@ -649,11 +650,17 @@ footer {
 	header{
 	}
 } */
+@media all and (max-width: 591px) {
+	#weather-info {
+		visibility: hidden;
+		margin: -20px;
+	}
+}
 
 @media all and (max-width: 768px) {
 	#navigation {
 		background: none;
-		background-color: #837755;
+		background-color: #000;
 	}
 
 	.services {
@@ -728,7 +735,7 @@ footer {
 	.scrollDown {
 	    top: 70%;
 	    left: 44%;
-	}
+	}	
 }
 
 
@@ -751,7 +758,21 @@ p, ul, li{
 	color: #00000054;
 	font-weight: 100;
 }
-/* 
-#about-me {
-	margin-top: 0px;
-} */
+
+#weather-icon {
+	
+	height: auto;
+	background-size: cover;
+	width: 80px;
+}
+
+#weather-info {
+	color: white;
+	margin: 0px;
+}
+
+#logo-image {
+	width: 150px;
+}
+
+
