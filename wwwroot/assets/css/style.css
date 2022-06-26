@@ -58,7 +58,7 @@ a:hover,a:active,a:focus{
 	outline: none;
 }
 .btn {
-    color: #fff;
+    color: white;
     background: transparent;
     border: 1px solid #fff;
     border-radius: 0px;
@@ -66,8 +66,9 @@ a:hover,a:active,a:focus{
     transition: 0.4s ease all;
 }
 .btn:hover {
-    background: #fff;
-    color: #000;
+    background: #e66f69;
+    color: white;
+	border: 1px solid #e66f69;
 }
 .block_title {
     font-size: 4em;
@@ -190,22 +191,25 @@ header {
     box-shadow: none;
     border-radius: 0px;
     margin-top: 7px;
+	padding-bottom: 0px;
 }
 .dropdown-menu ul {
     list-style: none;
     margin: 0;
-    padding: 1em 2em;
-    margin-top: 5%;
+    padding: 0em 0em;
+	padding-top: 0.5em;
 }
 .dropdown-menu ul li {
-    padding: 0.3em 0em 0.6em 0em;
+    padding: 0.4em 0em 0.4em 0em;
     font-size: 1.3em;
     position: relative;
+	padding-left: 1em;
+	transition: 0.4s ease all;
 }
 .dropdown-menu ul li a i {
     position: absolute;
     right: 0;
-    top: 20%;
+    top: 23%;
     font-size: 25px;
 }
 .arrow-up {
@@ -238,12 +242,15 @@ header {
 }
 
 .service-wrap {
+	--sectionBg : #ffbd59;
     width: 100%;
     height: 100%;
-    border: 1px solid #B5B5B5;
+    border: 1px solid var(--sectionBg);
     text-align: center;
     display: block;
     border-radius: 50%;
+	background: var(--sectionBg);
+	box-shadow: 2px 5px 5px 1px rgb(0 0 0 / 50%);
 }
 .service-wrap i {
     margin-top: 30px;
@@ -775,4 +782,21 @@ p, ul, li{
 	width: 150px;
 }
 
+.form-control:focus {
+	border: none;
+	box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(10 12 14 / 60%);
+}
 
+#menu-ul li:hover {
+	background-color: #e66f69;	
+}
+/* #menu-ul li:first-child {
+	margin-top: 0px;
+} */
+.dropdown-menu ul li i {
+	padding-right: 1em;
+}
+
+.dropdown-menu ul li:hover a {
+	color: white;
+}
