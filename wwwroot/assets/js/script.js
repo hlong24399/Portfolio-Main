@@ -156,10 +156,15 @@ function scroll() {
  
   $("#testimonial-container").owlCarousel({
  
-      navigation : false, // Show next and prev buttons
-      slideSpeed : 700,
+      navigation : true, // Show next and prev buttons
+      navigationText: ["←","→"],
+      slideSpeed : 1000,
       paginationSpeed : 400,
+      goToFirstSpeed : 1000,
       singleItem:true,
+      autoPlay: true,
+      goToFirst: true,
+      pagination: false,
   });
  
 });
@@ -191,7 +196,8 @@ function clock() {
     //Save the times in variables
 
     var today = new Date();
-
+    // console.log(today.toLocaleDateString());
+    console.log(today.toLocaleTimeString());
     var hours = today.getHours();
     var minutes = today.getMinutes();
     var seconds = today.getSeconds();
@@ -259,7 +265,7 @@ function updatePosition(position)
         C = Math.floor((F-32)*5/9)
         console.log(data);
         tempInfo = `${F}°F | ${C}°C - ${capitalizeFirstLetter(data.current.weather[0].description)} `
-        $("#weather-info").prepend(tempInfo);
+        $("#weather-info").append(tempInfo);
         icon_id = data.current.weather[0].icon;
         $("#weather-icon").attr("src", `https://openweathermap.org/img/wn/${icon_id}@4x.png`)
         
@@ -284,6 +290,6 @@ function getLocation() {
 
 $(document).ready(function () {
     clock();
-    const date = new Date();
+
     getLocation(); 
 });

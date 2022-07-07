@@ -42,7 +42,6 @@
         <div class="center text-center">
             <h1 class="bigheadline">Get Inspired</h1>
             <!-- <hr style="width: 50%; "> -->
-            <h4 class="subheadline"> <span id="clock"></span> </h4>
         </div>
         <div class="bottom">
             <a data-scroll href="#navigation" class="scrollDown animated pulse" id="scrollToContent"><i
@@ -57,7 +56,11 @@
                 <div class="col-xs-5">
                     <div class="logo"><a data-scroll href="#body" class="logo-text"><img id="logo-image" src="assets/images/Bryan-Logo.png" alt="logo" /></a></div>
                 </div>
-                <div class="col-xs-6 text-right">
+                <div class="col-xs-2">
+                    <h4 class="subheadline"> <span id="clock"></span> </h4>
+
+                </div>
+                <div class="col-xs-4 text-right" style="padding-right: 0px;">
                         <p id="weather-info">
                             <img id="weather-icon">
                         </p>  
@@ -92,7 +95,7 @@
         <div class="container">
             <h2 class="block_title">About Me</h2>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-12 col-lg-6">
                     <h2 class="about-me-h3"> Hi, I am Bryan, welcome to my personal tutoring space. </h2>
                     <p class="about-me-p">
                         With more than 3 years of experience in tutoring, I have learned many methods to effectively
@@ -102,7 +105,7 @@
                     in-person and virtual setup, where I use Zoom Meeting for virtual meetings. Specifically, I
                     conduct lectures using whiteboards, remote controls, screen sharing, and other features, to
                     enhance the live interaction during lectures and keep our lesson interesting!</p>
-                    <h3 class=""> My Technology Stack </h3>
+                    <h3 style="text-decoration: underline;"> My Technology Stack </h3>
             
                     <ul>
                         <li>C/C#/C++ (Object-oriented Programming and Competitive Problems)</li>
@@ -112,7 +115,7 @@
                         <li>Other bachelorerate-level subjects.</li>
                     </ul>
                 </div>
-                <div class="col-md-6 text-center hidden-xs hidden-sm">
+                <div class="col-md-12 col-lg-6 text-center hidden-xs hidden-sm">
                     <img id="about-image" src="assets/images/intro-image-premium.jpg">
                 </div>
             </div>
@@ -197,16 +200,14 @@
         <div class="container">
             <h2 class="block_title">Awesome Feedbacks</h2>
             <div class="row">
-                <div class="col-xs-12">
-                </div>
+                <!-- <div class="col-xs-12">
+                </div> -->
                 <div id="testimonial-container" class="col-xs-12">
                     <div class="testimonila-block">
                         <img src="assets/images/man_avatar_1.svg" alt="clients" class="selfshot">
                         <p>Bryan is the best and young tutor in Superprof. He is very patient and friendly, he really
                             meets my demand with an experienced software developer's view; He tried his best to teach me
-                            whatever (like hard skills and soft skills) I need His schedule is free enough for me even
-                            when we are in different cities without the issues of the time zone I would really like to
-                            take more lessons with him in the future if needed. So, Don't miss out on him if you stop by
+                            whatever (like hard skills and soft skills). So, Don't miss out on him if you stop by
                             the super prof page looking for computer science tutoring!</p>
                         <strong>Edward</strong>
                         <br>
@@ -282,7 +283,7 @@
                                     placeholder="Your Message " required></textarea>
                             </div>
 
-                            <button type="submit" class="btn medium"> Send </button>
+                            <button type="submit" class="btn medium submit-bt"> Send </button>
                         </form>
                     </div>
                 </div>
