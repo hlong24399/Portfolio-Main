@@ -815,7 +815,7 @@ footer {
 @media all and (max-width: 380px) {
 	#navigation {
 		background: none;
-		background-color: #837755;
+		background-color: #000000;
 	}
 
 	.logo-text {
