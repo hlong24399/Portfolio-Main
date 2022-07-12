@@ -747,12 +747,16 @@ footer {
 } */
 @media all and (max-width: 591px) {
 	#weather-info {
-		/* visibility: hidden; */
-		display: none;
+		visibility: hidden;
+		/* display: none; */
 		margin: -20px !important;
 	}
 	.testimonila-block {
 		height: 90rem;
+	}
+	.subheadline {
+		/* display: none; */
+		visibility: hidden;
 	}
 }
 
@@ -866,11 +870,15 @@ footer {
 		left: 44%;
 	}
 	#weather-info {
-		/* visibility: hidden; */
-		display: none;
+		visibility: hidden;
+		/* display: none; */
 	}
 	.testimonila-block {
 		height: 70rem;
+	}
+	.subheadline {
+		/* display: none; */
+		visibility: hidden;
 	}
 }
 
