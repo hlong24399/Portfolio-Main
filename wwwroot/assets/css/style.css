@@ -62,13 +62,13 @@ a {
 	outline: none;
 }
 
-a:hover,
-a:active,
-a:focus {
+a:hover
+{
 	text-decoration: none;
-	color: #e66f69;
+	color: rgb(0, 0, 0);
 	opacity: 0.9;
 	outline: none;
+	transition:cubic-bezier(0.19, 1, 0.22, 1) 3s;
 }
 
 /* .btn {
@@ -214,7 +214,6 @@ header {
 	min-width: 240px;
 	right: 0;
 	left: auto;
-	border: 1px solid #000;
 	box-shadow: none;
 	border-radius: 0px;
 	margin-top: 7px;
@@ -453,11 +452,6 @@ header {
 /////////////////////////////////////////////////////////////////////*/
 
 #testimonial {
-
-	/* background: url(../images/yellow-abstract-premium.jpg);
-    color: #000000;
-    background-attachment: fixed;
-    background-size: cover; */
 	padding: 00px 0px 80px 0px;
 }
 
@@ -468,6 +462,7 @@ header {
     background: beige;
     margin: 20px;
     padding-bottom: 0.8em;
+	height: 50rem;
 }
 
 .testimonila-block img {
@@ -712,6 +707,9 @@ footer {
 		/* visibility: hidden; */
 		display: none;
 	}
+	#about-image {
+		height: 700px !important;
+	}
 }
 
 @media all and (max-width: 991px) and (min-width: 768px) {
@@ -752,6 +750,9 @@ footer {
 		/* visibility: hidden; */
 		display: none;
 		margin: -20px !important;
+	}
+	.testimonila-block {
+		height: 90rem;
 	}
 }
 
@@ -810,6 +811,9 @@ footer {
 		/* visibility: hidden; */
 		display: none;
 	}
+	.testimonila-block {
+		height: 65rem;
+	}
 }
 
 @media all and (max-width: 380px) {
@@ -849,6 +853,9 @@ footer {
 		/* visibility: hidden; */
 		display: none;
 	}
+	.testimonila-block {
+		height: 80rem;
+	}
 
 }
 
@@ -861,6 +868,9 @@ footer {
 	#weather-info {
 		/* visibility: hidden; */
 		display: none;
+	}
+	.testimonila-block {
+		height: 70rem;
 	}
 }
 
@@ -878,7 +888,9 @@ li {
 
 #about-image {
 	max-width: -webkit-fill-available;
-	vertical-align: middle;
+    height: 515px;
+    width: auto;
+    object-fit: cover;
 }
 
 #clock {
@@ -914,7 +926,7 @@ li {
 }
 
 #menu-ul li:hover {
-	background-color: #000000;
+	background-color: var(--FontColor);
 }
 
 /* #menu-ul li:first-child {
@@ -1000,4 +1012,42 @@ li {
 
 .btn:active:focus {
 	outline : none !important;
+}
+
+.row {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.pe-7s-menu {
+	padding-right: 7px;
+    padding-left: 7px;
+    border: 1px solid;
+}
+
+i.pe-7s-menu:hover {
+    background: #ffbd59;
+}
+
+.about-me-div {
+	background: white;
+}
+
+.view-more
+{
+	border-radius: 0% 100% 100% 0%;
+    width: 60%;
+    margin-left: 25%;
+}
+
+.view-more a {
+	line-height: 480px;
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+.view-more a:hover {
+	color: beige;
+	background-color: black;
+	transition: ease 0.5s;
 }

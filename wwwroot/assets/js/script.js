@@ -162,7 +162,7 @@ function scroll() {
       paginationSpeed : 400,
       goToFirstSpeed : 1000,
       singleItem:true,
-      autoPlay: true,
+      autoPlay: false,
       goToFirst: true,
       pagination: false,
   });
@@ -196,8 +196,6 @@ function clock() {
     //Save the times in variables
 
     var today = new Date();
-    // console.log(today.toLocaleDateString());
-    console.log(today.toLocaleTimeString());
     var hours = today.getHours();
     var minutes = today.getMinutes();
     var seconds = today.getSeconds();
@@ -263,7 +261,6 @@ function updatePosition(position)
     .then(data => {
         F = Math.floor(1.8 * ((data.current.temp) - 273) + 32)
         C = Math.floor((F-32)*5/9)
-        console.log(data);
         tempInfo = `${F}°F | ${C}°C - ${capitalizeFirstLetter(data.current.weather[0].description)} `
         $("#weather-info").append(tempInfo);
         icon_id = data.current.weather[0].icon;
@@ -276,8 +273,6 @@ function updatePosition(position)
         }
     })
   
-  // console.log(position["coords"]["latitude"]);
-  console.log(position);
 }
 
 // Retrieve User Location
