@@ -79,12 +79,11 @@ a:hover
 	font-size: 1.2em;
 	transition: 0.4s ease all;
 }
-
+*/
 .btn:hover {
-	background: #e66f69;
-	color: white;
-	border: 1px solid #e66f69;
-} */
+	opacity: 1;
+    text-decoration: none;
+}
 
 .block_title {
 	font-size: 4em;
@@ -1041,15 +1040,8 @@ i.pe-7s-menu:hover {
 	background: white;
 }
 
-.view-more
-{
-	border-radius: 0% 100% 100% 0%;
-    width: 60%;
-    margin-left: 25%;
-}
-
 .view-more a {
-	line-height: 480px;
+	line-height: 200px;
     border: 1px solid black;
     padding: 1rem;
 }
@@ -1058,4 +1050,12 @@ i.pe-7s-menu:hover {
 	color: beige;
 	background-color: black;
 	transition: ease 0.5s;
+}
+
+#superprof-img
+{
+	border-radius: 0%;
+    padding-top: 72px;
+    max-width: 400px;
+    max-height: 400px;
 }

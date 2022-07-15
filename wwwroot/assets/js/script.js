@@ -162,7 +162,7 @@ function scroll() {
       paginationSpeed : 400,
       goToFirstSpeed : 1000,
       singleItem:true,
-      autoPlay: false,
+      autoPlay: true,
       goToFirst: true,
       pagination: false,
   });
