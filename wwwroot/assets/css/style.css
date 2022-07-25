@@ -275,11 +275,13 @@ header {
 .service-wrap {
 	width: 100%;
 	height: 100%;
-	border: 1px solid var(--FontColor);
+	/* border: 1px solid var(--FontColor); */
+	border: 1px solid beige;
 	text-align: center;
 	display: block;
 	border-radius: 50%;
-	background: var(--FontColor);
+	background: beige;
+	/* background: var(--FontColor); */
 	box-shadow: 2px 5px 5px 1px rgb(0 0 0 / 50%);
 }
 .service-wrap i {
@@ -462,6 +464,7 @@ header {
     margin: 20px;
     padding-bottom: 0.8em;
 	height: 50rem;
+	padding-top: 20px;
 }
 
 .testimonila-block img {
@@ -919,7 +922,7 @@ li {
 	font-weight: 500;
     color: #000000;
     margin: 0px;
-    background: beige;
+    background: var(--FontColor);
     padding-right: 20px;
 }
 
@@ -1058,4 +1061,8 @@ i.pe-7s-menu:hover {
     padding-top: 72px;
     max-width: 400px;
     max-height: 400px;
+}
+
+.address  li a {
+	color : white;
 }

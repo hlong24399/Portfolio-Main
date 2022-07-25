@@ -272,7 +272,6 @@ function updatePosition(position)
           $("#weather-icon").css('margin', "-20px");
         }
     })
-  
 }
 
 // Retrieve User Location
