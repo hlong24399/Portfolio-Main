@@ -923,7 +923,7 @@ li {
     color: #000000;
     margin: 0px;
     background: var(--FontColor);
-    padding-right: 20px;
+    text-align: center;
 }
 
 #logo-image {
