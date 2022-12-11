@@ -20,4 +20,4 @@ app.use( '/api', require("./routes/api.js"));
 
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
-})
+}) ;
